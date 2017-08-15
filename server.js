@@ -5,6 +5,25 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var articleOne = {
+    title: 'Varshit\'s Article One',
+    heading: 'Article One',
+    date: 'Aug 15, 2017',
+    content:` <p>
+                This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. 
+                This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one.
+            </p>
+            <p>
+                This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one.
+            </p>
+            <p>
+                This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. 
+            </p>
+            <p>
+                This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. 
+            </p>`
+};
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });

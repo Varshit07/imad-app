@@ -5,8 +5,9 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
-    title: 'Varshit\'s Article One',
+var articles = {
+    var articleOne:{
+    title: 'Varshit Shah | Article One',
     heading: 'Article One',
     date: 'Aug 15, 2017',
     content:` <p>
@@ -22,7 +23,20 @@ var articleOne = {
             <p>
                 This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. This is the content on article one. 
             </p>`
-};
+},
+    var articleTwo: {
+        title: 'Varshit\'s Article Two',
+        heading: 'Article Two',
+        date: 'Aug 15, 2017',
+        content: `<p>
+                This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. 
+            </p>
+            <p>
+                This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. This is the content of article two. 
+            </p>`
+    },
+    var articleThree: {}
+}
 function createTemplate(data){
     var title = data.title;
     var heading = data.heading;

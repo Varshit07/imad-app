@@ -49,7 +49,7 @@ var articles = {
                 This is the content on Article 3. This is the content on Article 3. This is the content on Article 3. This is the content on Article 3. This is the content on Article 3. This is the content on Article 3. This is the content on Article 3. This is the content on Article 3. This is the content on Article 3. This is the content on Article 3. This is the content on Article 3. This is the content on Article 3. This is the content on Article 3. This is the content on Article 3. This is the content on Article 3. This is the content on Article 3. This is the content on Article 3. This is the content on Article 3. This is the content on Article 3. This is the content on Article 3. This is the content on Article 3. This is the content on Article 3. 
                 </p>`
     }
-}
+};
 function createTemplate(data){
     var title = data.title;
     var heading = data.heading;

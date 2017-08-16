@@ -4,6 +4,13 @@ var element = document.getElementById('main-text');
 element.innerHTML = "This is Varshit via JS!!";
 //Move Madi ;)
 var image = document.getElementById('madi');
+marginLeft = 0;
+
+function moveRight () {
+  marginLeft = marginLeft + 10;
+  image.style.marginLeft = marginLeft + 'px';
+}
+
 image.onclick = function () {
-  image.style.marginLeft = '50px';  
+  var interval = setInterval(moveRight, 100); 
 };
